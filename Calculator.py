@@ -76,26 +76,3 @@ else:
     print('invalid')
 
 
-
-
-        elif choice == '-':
-            print(num1, '-', num2, '=', subtract(num1, num2))
-            
-        elif choice == '*':
-            print(num1, '*', num2, '=', multiply(num1, num2))
-            
-        elif choice == '/':
-            print(num1, '/', num2, '=', divide(num1, num2))
-            
-        elif choice == '^':
-            print(num1, '^', num2, '=', add(num1, num2))
-            
-        next_calculation = input('Want to determine a factorial? (yes/no)')
-        if next_calculation == 'no':
-            break
-        
-        
-    else:
-        print('invalid')
-
-
