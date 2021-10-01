@@ -47,9 +47,9 @@ while True:
             print(num1, '/', num2, '=', divide(num1, num2))
             
         elif choice == '^':
-            print(num1, '^', num2, '=', add(num1, num2))
+            print(num1, '^', num2, '=', pow(num1, num2))
             
-        next_calculation = input('Want to ask another quetion? (yes/no)')
+        next_calculation = input('Want to ask another question? (yes/no)')
         if next_calculation == 'no':
             next_calculation = input('Do you want to determine a factorial then? (ok/no)')
             if next_calculation == 'ok':
@@ -74,5 +74,6 @@ while True:
         
 else:
     print('invalid')
+
 
 
