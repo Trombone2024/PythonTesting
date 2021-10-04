@@ -1,5 +1,6 @@
 from time import sleep
 
+
 #do not change - define the sleep key, i want to keep it was sleep(1) - sleep(0.0001) or stuff like that.
 
 def add(x,y):
@@ -24,13 +25,13 @@ print('subtraction')
 print('multiplication')
 print('division')
 print('power')
+print('floor division')
 print('_________________________')  
 
 while True:
-    choice=input('Choose either + (addition) or - (subtraction) or * (multiplication) or / (division) or ^ (power)|')
-    print('_________________________')
+    choice=input('Choose either + (addition) or - (subtraction) or * (multiplication) or / (division) or ^ (power) or // (floor division)|')
     
-    if choice in('+','-','*','/','^'):
+    if choice in('+','-','*','/','^','//'):
         num1 = float(input('Type first number: '))
         num2 = float(input('Type second number: '))
         
@@ -48,6 +49,9 @@ while True:
             
         elif choice == '^':
             print(num1, '^', num2, '=', pow(num1, num2))
+            
+        elif choice == '//':
+            print(num2, '/', num1, '=', divide(num1, num2))
             
         next_calculation = input('Want to ask another question? (yes/no)')
         if next_calculation == 'no':
